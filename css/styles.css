@@ -57,6 +57,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 .section-dark { background: var(--bg-dark); }
 .section-surface { background: var(--bg-surface); }
 .section-surface2 { background: var(--bg-surface2); }
+.section-steel { background: var(--steel); }
 .text-center { text-align: center; }
 .text-accent { color: var(--accent); }
 .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 40px; align-items: center; }
