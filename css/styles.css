@@ -380,7 +380,7 @@ p { color: var(--text-muted); line-height: 1.7; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   aspect-ratio: 4/3;
-  background: var(--bg-surface);
+  background: var(--bg-dark);
   border: 1px solid var(--border);
   transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -605,7 +605,7 @@ p { color: var(--text-muted); line-height: 1.7; }
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: contain;
-  background: var(--bg-surface);
+  background: var(--bg-dark);
   border: 1px solid var(--border);
   transition: transform var(--transition), box-shadow var(--transition);
 }
