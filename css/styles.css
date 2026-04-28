@@ -463,7 +463,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 .shipping-stat span { font-size: .9rem; color: var(--text-muted); }
 
 /* ── Testimonials ───────────────────────────────────────────── */
-.testimonials { background: var(--bg-dark); }
+.testimonials { background: var(--bg-dark); isolation: isolate; }
 .carousel-track {
   display: flex;
   gap: 24px;
@@ -686,9 +686,8 @@ p { color: var(--text-muted); line-height: 1.7; }
 .popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.75);
-  backdrop-filter: blur(4px);
-  z-index: 2000;
+  background: rgba(0,0,0,.8);
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: center;
