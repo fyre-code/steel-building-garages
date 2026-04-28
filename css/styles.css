@@ -388,7 +388,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 .building-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform .4s ease;
 }
 .building-card:hover img { transform: scale(1.06); }
@@ -604,7 +604,8 @@ p { color: var(--text-muted); line-height: 1.7; }
   border-radius: var(--radius);
   width: 100%;
   aspect-ratio: 4/3;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--bg-surface);
   border: 1px solid var(--border);
   transition: transform var(--transition), box-shadow var(--transition);
 }
