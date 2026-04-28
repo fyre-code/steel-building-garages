@@ -421,6 +421,28 @@ p { color: var(--text-muted); line-height: 1.7; }
 }
 .building-card:hover .building-card-name::after { opacity: 1; transform: translateX(0); }
 
+/* ── Photo Rows (Building Categories) ──────────────────────── */
+.photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 0;
+}
+.photo-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photo-row-single {
+  display: flex;
+  justify-content: center;
+}
+.photo-row-single img {
+  width: 33.33%;
+  height: auto;
+  display: block;
+}
+
 /* ── Feature Cards (Why Choose Us) ─────────────────────────── */
 .feature-card {
   background: var(--bg-surface);
@@ -887,4 +909,6 @@ p { color: var(--text-muted); line-height: 1.7; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-grid .featured { grid-column: span 1; }
   .btn-lg { padding: 14px 24px; font-size: 1rem; }
+  .photo-row { grid-template-columns: 1fr; }
+  .photo-row-single img { width: 100%; }
 }
