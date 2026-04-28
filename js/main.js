@@ -128,4 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── Tel links: desktop no-op ─────────────────────────── */
+  const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)');
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', e => {
+      if (isDesktop.matches) e.preventDefault();
+    });
+  });
+
 });
