@@ -57,7 +57,9 @@ p { color: var(--text-muted); line-height: 1.7; }
 .section-dark { background: var(--bg-dark); }
 .section-surface { background: var(--bg-surface); }
 .section-surface2 { background: var(--bg-surface2); }
-.section-steel { background: var(--steel); }
+.section-steel { background: var(--steel); color: var(--bg-dark); }
+.section-steel .section-heading { color: var(--bg-dark); }
+.section-steel .section-subhead { color: var(--bg-surface2); }
 .text-center { text-align: center; }
 .text-accent { color: var(--accent); }
 .grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 40px; align-items: center; }
@@ -99,7 +101,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 .btn-primary { background: var(--accent); color: var(--white); }
 .btn-primary:hover { background: var(--accent-hover); }
 .btn-ghost { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,.4); }
-.btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
+.btn-ghost:hover { border-color: var(--blue); background: var(--blue); color: var(--white); }
 .btn-outline-accent { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
 .btn-outline-accent:hover { background: var(--accent); color: var(--white); }
 .btn-lg { padding: 18px 36px; font-size: 1.15rem; }
@@ -712,7 +714,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 .contact-info-label { font-size: .8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 2px; }
 .contact-info-value { color: var(--white); font-weight: 500; font-size: .95rem; }
 .contact-info-value a { color: var(--accent); }
-.contact-info-value a:hover { text-decoration: underline; }
+.contact-info-value a:hover { color: var(--blue); text-decoration: underline; }
 
 /* ── Facility Section ───────────────────────────────────────── */
 .facility-section { background: var(--bg-surface); }
