@@ -903,12 +903,12 @@ p { color: var(--text-muted); line-height: 1.7; }
   .legal-content { padding: 28px 20px; }
   .stat-row { gap: 24px; }
   .btn-group { align-items: center; }
+  .photo-row { grid-template-columns: 1fr; }
+  .photo-row-single img { width: 100%; }
 }
 @media (max-width: 480px) {
   .building-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-grid .featured { grid-column: span 1; }
   .btn-lg { padding: 14px 24px; font-size: 1rem; }
-  .photo-row { grid-template-columns: 1fr; }
-  .photo-row-single img { width: 100%; }
 }
