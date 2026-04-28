@@ -736,7 +736,7 @@ p { color: var(--text-muted); line-height: 1.7; }
 }
 .popup-close:hover { background: rgba(255,255,255,.2); color: var(--white); }
 .popup-image { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
-.popup-body { padding: 28px 30px 32px; }
+.popup-body { padding: 40px 32px 36px; }
 .popup-body h2 {
   font-size: 1.9rem;
   color: var(--accent);
