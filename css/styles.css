@@ -539,7 +539,6 @@ p { color: var(--text-muted); line-height: 1.7; }
   gap: 0;
 }
 .testimonial-card {
-  flex: 0 0 100%;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -553,6 +552,7 @@ p { color: var(--text-muted); line-height: 1.7; }
   border: none;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .testimonial-image-card img {
   max-width: 720px;

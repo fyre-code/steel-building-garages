@@ -77,13 +77,19 @@ document.addEventListener('DOMContentLoaded', () => {
       return 1;
     }
 
+    function layout() {
+      track.style.width = (cards.length / perView * 100) + '%';
+      cards.forEach(c => { c.style.flex = `0 0 ${100 / cards.length}%`; });
+    }
+
     function goTo(index) {
       current = ((index % total) + total) % total;
-      const offset = current * perView;
-      const pct = (offset / cards.length) * 100;
+      const pct = (current / total) * 100;
       track.style.transform = `translateX(-${pct}%)`;
       dots.forEach((d, i) => d.classList.toggle('active', i === current));
     }
+
+    layout();
 
     function startAuto() {
       autoTimer = setInterval(() => goTo(current + 1), 5000);
@@ -99,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
       perView = getPerView();
       total = Math.ceil(cards.length / perView);
+      layout();
       goTo(Math.min(current, total - 1));
     });
 
