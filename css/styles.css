@@ -29,7 +29,7 @@
 /* ── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { background: var(--bg-dark); color: var(--text); font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+body { background: var(--bg-dark); color: var(--text); font-family: 'Inter', sans-serif; font-size: 18.5px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
@@ -49,7 +49,18 @@ h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
 h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); }
 h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
 h4 { font-size: 1.25rem; }
-p { color: var(--text-muted); line-height: 1.7; }
+p { color: var(--text-muted); line-height: 1.7; font-size: 18.5px; }
+body :not(.footer) :is(p, li),
+.section-subhead,
+.hero p,
+.feature-card p,
+.cta-band p,
+.faq-answer-inner p,
+.legal-content p,
+.legal-content ul li,
+.popup-body p,
+.shipping-stat span,
+.contact-info-value { font-size: 18.5px; }
 
 /* ── Layout Utilities ───────────────────────────────────────── */
 .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
@@ -559,21 +570,6 @@ p { color: var(--text-muted); line-height: 1.7; }
   border-radius: var(--radius-lg);
   display: block;
 }
-.testimonial-stars { color: var(--accent); margin-bottom: 14px; letter-spacing: 2px; font-size: 1rem; }
-.testimonial-text { color: var(--text-muted); font-size: .95rem; line-height: 1.7; margin-bottom: 20px; }
-.testimonial-author { display: flex; align-items: center; gap: 12px; }
-.testimonial-avatar {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
-  background: var(--bg-surface2);
-  flex-shrink: 0;
-  border: 2px solid var(--border);
-}
-.testimonial-name { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); }
-.testimonial-location { font-size: .82rem; color: var(--text-muted); }
-
 .carousel-controls {
   display: flex;
   align-items: center;
