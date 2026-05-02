@@ -521,14 +521,25 @@ p { color: var(--text-muted); line-height: 1.7; }
 .shipping-stat span { font-size: .9rem; color: var(--text-muted); }
 
 /* ── Testimonials ───────────────────────────────────────────── */
-.testimonials { background: var(--bg-dark); isolation: isolate; }
+.testimonials {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--bg-dark);
+  background-image: linear-gradient(rgba(17,20,24,.82), rgba(17,20,24,.82)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690499691_background-5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media (max-width: 900px), (hover: none) {
+  .testimonials { background-attachment: scroll; }
+}
 .carousel-track {
   display: flex;
   gap: 24px;
   overflow: hidden;
 }
 .testimonial-card {
-  flex: 0 0 calc(33.33% - 16px);
+  flex: 0 0 100%;
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -536,6 +547,20 @@ p { color: var(--text-muted); line-height: 1.7; }
   transition: border-color var(--transition);
 }
 .testimonial-card:hover { border-color: var(--accent); }
+.testimonial-image-card {
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.testimonial-image-card img {
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  display: block;
+}
 .testimonial-stars { color: var(--accent); margin-bottom: 14px; letter-spacing: 2px; font-size: 1rem; }
 .testimonial-text { color: var(--text-muted); font-size: .95rem; line-height: 1.7; margin-bottom: 20px; }
 .testimonial-author { display: flex; align-items: center; gap: 12px; }

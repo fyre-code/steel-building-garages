@@ -74,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let autoTimer;
 
     function getPerView() {
-      if (window.innerWidth <= 768) return 1;
-      if (window.innerWidth <= 1024) return 2;
-      return 3;
+      return 1;
     }
 
     function goTo(index) {
