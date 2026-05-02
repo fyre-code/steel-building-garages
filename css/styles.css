@@ -84,10 +84,15 @@ p { color: var(--text-muted); line-height: 1.7; }
 
 /* ── Buttons ────────────────────────────────────────────────── */
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   padding: 14px 28px;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: var(--radius);
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.05rem;
@@ -104,6 +109,16 @@ p { color: var(--text-muted); line-height: 1.7; }
 .btn-ghost:hover { border-color: var(--blue); background: var(--blue); color: var(--white); }
 .btn-outline-accent { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
 .btn-outline-accent:hover { background: var(--accent); color: var(--white); }
+.btn-call { background: #d22; color: var(--white); border: 2px solid #d22; animation: btn-call-zoom .7s cubic-bezier(.22,.61,.36,1) both; }
+.btn-call:hover { background: #b81d1d; border-color: #b81d1d; color: var(--white); }
+.btn-call i { color: var(--white) !important; }
+@keyframes btn-call-zoom {
+  from { opacity: 0; transform: translateX(-120%) scale(.85); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-call { animation: none; }
+}
 .btn-lg { padding: 18px 36px; font-size: 1.15rem; }
 .btn-sm { padding: 10px 20px; font-size: .9rem; }
 .btn-group { display: flex; flex-direction: column; align-items: center; gap: 12px; }
@@ -317,6 +332,12 @@ p { color: var(--text-muted); line-height: 1.7; }
   background-size: cover;
   background-position: center;
   z-index: 0;
+}
+.hero-bg-parallax {
+  background-attachment: fixed;
+}
+@media (max-width: 900px), (hover: none) {
+  .hero-bg-parallax { background-attachment: scroll; }
 }
 .hero-bg::after {
   content: '';
