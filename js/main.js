@@ -4,6 +4,24 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ── Call CTA scroll-in animation ──────────────────────── */
+  const callButtons = document.querySelectorAll('.btn-call');
+  if (callButtons.length) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('btn-call-in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      callButtons.forEach(btn => io.observe(btn));
+    } else {
+      callButtons.forEach(btn => btn.classList.add('btn-call-in'));
+    }
+  }
+
   /* ── Mobile hamburger ──────────────────────────────────── */
   const hamburger = document.querySelector('.nav-hamburger');
   const mobileNav = document.querySelector('.nav-mobile');
