@@ -608,6 +608,17 @@ p { color: var(--text-muted); line-height: 1.7; }
 .carousel-dot.active { background: var(--accent); transform: scale(1.3); }
 
 /* ── FAQ Accordion ──────────────────────────────────────────── */
+.faq-section {
+  position: relative;
+  isolation: isolate;
+  background-image: linear-gradient(rgba(17,20,24,.85), rgba(17,20,24,.85)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690497843_background-3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media (max-width: 900px), (hover: none) {
+  .faq-section { background-attachment: scroll; }
+}
 .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
 .faq-item {
   background: var(--bg-surface);
