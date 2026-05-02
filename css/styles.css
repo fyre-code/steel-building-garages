@@ -533,10 +533,10 @@ p { color: var(--text-muted); line-height: 1.7; }
 @media (max-width: 900px), (hover: none) {
   .testimonials { background-attachment: scroll; }
 }
+.carousel-viewport { overflow: hidden; }
 .carousel-track {
   display: flex;
-  gap: 24px;
-  overflow: hidden;
+  gap: 0;
 }
 .testimonial-card {
   flex: 0 0 100%;
