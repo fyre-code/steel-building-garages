@@ -468,7 +468,7 @@ body :not(.footer) :is(p, li),
   height: auto;
   display: block;
 }
-.gallery-pairs .photo-row-2 { margin-bottom: 12px; }
+.gallery-pairs .photo-row-2 { margin-bottom: 24px; }
 .gallery-pairs .photo-row-2 img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--bg-dark); border-radius: 8px; }
 .photo-row-2 {
   display: grid;
