@@ -460,8 +460,8 @@ body :not(.footer) :is(p, li),
 .photo-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 .photo-row img {
   width: 100%;
