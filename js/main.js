@@ -4,6 +4,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ── Hyppo chat widget (excluded on legal pages) ───────── */
+  {
+    const path = window.location.pathname.toLowerCase();
+    if (!path.includes('privacy-policy') && !path.includes('terms-of-service')) {
+      setTimeout(() => {
+        const s = document.createElement('script');
+        s.src = 'https://hyppohq.io/api/v1/widgets/embed/steel-building-garages-chat';
+        s.async = true;
+        document.body.appendChild(s);
+      }, 3000);
+    }
+  }
+
   /* ── Call CTA scroll-in animation ──────────────────────── */
   const callButtons = document.querySelectorAll('.btn-call');
   if (callButtons.length) {
