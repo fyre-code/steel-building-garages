@@ -360,11 +360,14 @@ body :not(.footer) :is(p, li),
 }
 .hero-bg-parallax {
   background-attachment: fixed;
-  background-size: auto 150%;
+  background-size: 115% auto;
   background-position: center;
 }
 @media (max-width: 900px), (hover: none) {
-  .hero-bg-parallax { background-size: cover; }
+  .hero-bg-parallax {
+    background-attachment: scroll;
+    background-size: cover;
+  }
 }
 @media (max-width: 900px), (hover: none) {
   .hero-bg-parallax { background-attachment: scroll; }
