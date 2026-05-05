@@ -494,6 +494,8 @@ body :not(.footer) :is(p, li),
 }
 .gallery-pairs .photo-row-2 { margin-bottom: 24px; }
 .gallery-pairs .photo-row-2 img { aspect-ratio: 4 / 3; object-fit: contain; background: var(--bg-dark); border-radius: 8px; }
+.gallery-pairs .photo-row-2:has(> img:only-child) { grid-template-columns: 1fr; justify-items: center; }
+.gallery-pairs .photo-row-2:has(> img:only-child) img { width: calc(50% - 6px); }
 .photo-row-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
