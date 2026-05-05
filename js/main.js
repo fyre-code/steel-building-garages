@@ -33,6 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.querySelectorAll('.nav-mobile-submenu-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      btn.nextElementSibling.classList.toggle('open');
+    });
+  });
+
   /* ── Desktop dropdown ──────────────────────────────────── */
   document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
     const toggle = dropdown.querySelector('.nav-dropdown-toggle');

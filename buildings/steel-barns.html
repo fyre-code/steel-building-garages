@@ -44,8 +44,8 @@
   </nav>
   <div class="nav-mobile">
     <a href="../index.html" class="nav-mobile-link">Home</a><a href="../about.html" class="nav-mobile-link">About</a>
-    <span class="nav-mobile-link" style="color:var(--accent)">Buildings</span>
-    <div class="nav-mobile-submenu"><a href="by-number.html">Buildings By Number</a><a href="large-steel-buildings.html">Large Steel Buildings</a><a href="garage-buildings.html">Garage Buildings</a><a href="steel-barns.html">Steel Barns</a><a href="medium-steel-buildings.html">Medium Steel Buildings</a><a href="add-ons.html">Add Ons</a></div>
+    <button class="nav-mobile-link nav-mobile-submenu-toggle" type="button" aria-expanded="false" aria-controls="nav-mobile-buildings">Buildings<svg class="nav-mobile-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="nav-mobile-submenu" id="nav-mobile-buildings"><a href="by-number.html">Buildings By Number</a><a href="large-steel-buildings.html">Large Steel Buildings</a><a href="garage-buildings.html">Garage Buildings</a><a href="steel-barns.html">Steel Barns</a><a href="medium-steel-buildings.html">Medium Steel Buildings</a><a href="add-ons.html">Add Ons</a></div>
     <a href="../contact.html" class="nav-mobile-link">Contact</a>
     
   </div>
@@ -67,18 +67,29 @@
     <div class="container">
       <h2 class="section-heading" style="margin-bottom:20px">Built for Farm and Storage Needs</h2>
       <p style="margin-bottom:32px">Steel barns give you a strong space for equipment, supplies, vehicles, and farm use. They are a smart choice for customers who need simple, durable storage that lasts.</p>
-            <div class="gallery-pairs">
+                  <div class="gallery-pairs">
         <div class="photo-row-2">
           <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335084135_steel-building-garages-no-13.jpg" alt="Steel barn #13">
-          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335088990_steel-building-garages-no-19.jpg" alt="Steel barn #19">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335088990_steel-building-garages-no-19.jpg" alt="Steel barn #19" loading="lazy" decoding="async">
         </div>
         <div class="photo-row-2">
-          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335091771_steel-building-garages-no-22.jpg" alt="Steel barn #22">
-          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335098502_steel-building-garages-no-30.jpg" alt="Steel barn #30">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335091771_steel-building-garages-no-22.jpg" alt="Steel barn #22" loading="lazy" decoding="async">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335098502_steel-building-garages-no-30.jpg" alt="Steel barn #30" loading="lazy" decoding="async">
         </div>
         <div class="photo-row-2">
-          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777403933953_steel-building-garages-no-50.jpg" alt="Steel barn #50">
-          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335073172_steel-building-garages-no-55.jpg" alt="Steel barn #55">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777403933953_steel-building-garages-no-50.jpg" alt="Steel barn #50" loading="lazy" decoding="async">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777335073172_steel-building-garages-no-55.jpg" alt="Steel barn #55" loading="lazy" decoding="async">
+        </div>
+        <div class="text-center" style="margin:32px 0">
+          <a href="tel:+18775342247" class="btn btn-call btn-lg"><i class="fa fa-phone" style="color:var(--accent)"></i> Call Now For Up to Date Pricing<br>(877) 534-2247</a>
+        </div>
+        <div class="photo-row-2">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777773416125_steel-building-garages-no-73.jpg" alt="Steel barn #73" loading="lazy" decoding="async">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777773416902_steel-building-garages-no-74.jpg" alt="Steel barn #74" loading="lazy" decoding="async">
+        </div>
+        <div class="photo-row-2">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777903627805_steel-building-garages-no-83.jpg" alt="Steel barn #83" loading="lazy" decoding="async">
+          <img src="https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/6e40232e-2aa4-48c7-9ffa-835f95b8e47a/1777773430441_steel-building-garages-no-93.jpg" alt="Steel barn #93" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="text-center" style="margin-top:40px">
