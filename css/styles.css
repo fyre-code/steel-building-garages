@@ -376,9 +376,13 @@ body :not(.footer) :is(p, li),
   position: relative;
   z-index: 1;
   max-width: 660px;
-  padding: 48px 40px;
+  padding: 64px 0;
+}
+.hero h1, .hero p {
   background: rgba(17,20,24,.78);
-  border-radius: 12px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: inline-block;
 }
 .hero-badge {
   display: inline-flex;
