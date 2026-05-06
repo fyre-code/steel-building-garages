@@ -585,9 +585,9 @@ body :not(.footer) :is(p, li),
 }
 
 /* ── Shipping Section ───────────────────────────────────────── */
-.shipping-section { background: var(--bg-surface); }
+.shipping-section { background: #000000; }
 .shipping-section .grid-2 { align-items: center; gap: 60px; }
-.shipping-section img { border-radius: var(--radius-lg); width: 100%; }
+.shipping-section img { border-radius: var(--radius-lg); width: 100%; border: none !important; }
 .shipping-stat {
   display: flex;
   align-items: center;
@@ -605,10 +605,17 @@ body :not(.footer) :is(p, li),
   position: relative;
   isolation: isolate;
   background-color: var(--bg-dark);
-  background-image: linear-gradient(rgba(17,20,24,.82), rgba(17,20,24,.82)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690499691_background-5.jpg');
+  background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690499691_background-5.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.testimonials .section-heading,
+.testimonials > .container > p {
+  background: rgba(17,20,24,.78);
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: inline-block;
 }
 @media (max-width: 900px), (hover: none) {
   .testimonials { background-attachment: scroll; }
@@ -680,10 +687,16 @@ body :not(.footer) :is(p, li),
 .faq-section {
   position: relative;
   isolation: isolate;
-  background-image: linear-gradient(rgba(17,20,24,.85), rgba(17,20,24,.85)), url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690497843_background-3.jpg');
+  background-image: url('https://pbrlhyansxjdndccwtau.supabase.co/storage/v1/object/public/media-public/1f430f2a-bcd7-45ed-9bcb-0830ee548b4f/21b66447-37a8-4ace-913f-f917ad344996/1777690497843_background-3.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.faq-section .section-heading {
+  background: rgba(17,20,24,.78);
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: inline-block;
 }
 @media (max-width: 900px), (hover: none) {
   .faq-section { background-attachment: scroll; }
